@@ -10,13 +10,16 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"start": "tsx ./src/file.ts"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
 		"@sveltejs/adapter-node": "^5.2.9",
 		"@sveltejs/kit": "^2.9.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@types/better-sqlite3": "^7.6.12",
+		"drizzle-kit": "^0.30.1",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
@@ -25,8 +28,16 @@
 		"prettier-plugin-svelte": "^3.2.6",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
+		"tsx": "^4.19.2",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.0.0",
 		"vite": "^6.0.0"
+	},
+	"dependencies": {
+		"@libsql/client": "^0.14.0",
+		"better-sqlite3": "^11.7.0",
+		"dotenv": "^16.4.7",
+		"drizzle-orm": "^0.38.2",
+		"oslo": "^1.2.1"
 	}
 }
