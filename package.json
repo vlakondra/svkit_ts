@@ -34,10 +34,16 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@codemirror/lang-javascript": "^6.2.2",
+		"@codemirror/lang-sql": "^6.8.0",
+		"@codemirror/language": "^6.10.8",
+		"@codemirror/theme-one-dark": "^6.1.2",
+		"@codemirror/view": "^6.36.1",
 		"@libsql/client": "^0.14.0",
 		"better-sqlite3": "^11.7.0",
 		"dotenv": "^16.4.7",
 		"drizzle-orm": "^0.38.2",
-		"oslo": "^1.2.1"
+		"oslo": "^1.2.1",
+		"svelte-codemirror-editor": "^1.4.1"
 	}
 }
